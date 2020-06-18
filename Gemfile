@@ -18,7 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'will_paginate'
 gem 'api-pagination'
 gem 'json'
-
+gem 'bootstrap', '~> 4.5.0'
 
 
 #Bring in the API data

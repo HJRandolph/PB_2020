@@ -1,10 +1,25 @@
-<p id="notice"><%= notice %></p>
+<% provide(:title, "Police Brutality List | 2020") %>
 
 <h1>Police Brutalities</h1>
 <h2>This list currently contains <span class="count"><%= @police_brutalities["data"].count %></span> reports of police brutality.</h2>
 <p><%= link_to 'Report Police Brutality here', 
 "https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE" %></p>
 
+<div class="container">
+<% @police_brutalities["data"].each do |police_brutality| %>
+
+	<div><%= police_brutality["city"] + ", " + police_brutality["state"] %></div> 
+	<div><%= ": " + police_brutality["title"] %></div>
+		<div>
+		<% i = 65 %>
+			<% police_brutality["links"].each do |link| %>
+				<%= link_to "Exhibit #{i.chr}", link, target: "_blank" %>
+				<% i += 1 %>
+			<% end %>
+	</div>
+	
+<% end %>
+</div>
 
 <table>
   <thead>
