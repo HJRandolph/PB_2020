@@ -1,0 +1,2 @@
+module PoliceBrutalitiesHelper
+end
