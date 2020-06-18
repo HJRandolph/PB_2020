@@ -3,50 +3,32 @@
 <h1>Police Brutalities</h1>
 <h2>This list currently contains <span class="count"><%= @police_brutalities["data"].count %></span> reports of police brutality.</h2>
 <p><%= link_to 'Report Police Brutality here', 
-"https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE" %></p>
+"https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE", :class => "count" %></p>
 
 <div class="container">
+<div class="row">
+<div class="col-3 label">City and State</div> 
+	<div class="col-3 label">Incident</div>
+		<div class="col-3 label">Evidence</div>
+	<div class="col-3 label">
+	Date
+</div>
+</div>
 <% @police_brutalities["data"].each do |police_brutality| %>
-
-	<div><%= police_brutality["city"] + ", " + police_brutality["state"] %></div> 
-	<div><%= ": " + police_brutality["title"] %></div>
-		<div>
+<div class="row">
+	<div class="col-3"><%= police_brutality["city"] + ", " + police_brutality["state"] %></div> 
+	<div class="col-3"><%= police_brutality["title"] %></div>
+		<div class="col-3">
 		<% i = 65 %>
 			<% police_brutality["links"].each do |link| %>
 				<%= link_to "Exhibit #{i.chr}", link, target: "_blank" %>
 				<% i += 1 %>
 			<% end %>
 	</div>
-	
+	<div class="col-3">
+	<%= police_brutality["date"][0,10] %>
+	</div>
+</div>
 <% end %>
 </div>
-
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @police_brutalities["data"].each do |police_brutality| %>
-
-      <tr>
-      
-        <td><%= police_brutality["city"] + ", " + police_brutality["state"] %></td>
-        <td><%= police_brutality["title"] %></td>
-        <td>
-        <% i = 65 %>
-			<% police_brutality["links"].each do |link| %>
-				<%= link_to "Exhibit #{i.chr}", link, target: "_blank" %>
-				<% i += 1 %>
-			<% end %>
-			</td>
-              </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
 

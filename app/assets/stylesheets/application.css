@@ -18,7 +18,22 @@ body {
 	background-color: aliceblue;
 }
 
-.container {
-	display: flex;
-	flex-flow: row nowrap;
+a {
+	padding: .1em;
+}
+
+a:visited {
+	color: gray;
+	background-color: blue;
+}
+
+
+a:hover {
+	color: white;
+	background-color: blue;
+	text-decoration: underline;
+}
+
+p {
+	margin: 1em;
 }
