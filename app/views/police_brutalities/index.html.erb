@@ -14,6 +14,26 @@
 	Date
 </div>
 </div>
+<div class="row">
+<div class="col-3">
+	<%= @random_b["city"] %>, 	<%= @random_b["state"] %>
+</div>
+<div class="col-3">
+	<%= @random_b["title"] %>
+</div>
+<div class="col-3">
+		<% i = 65 %>
+			<% @random_b["links"].each do |link| %>
+				<%= link_to "Exhibit #{i.chr}", link, target: "_blank" %>
+				<% i += 1 %>
+			<% end %>
+</div>
+<div class="col-3">
+	<%= @random_b["date"][0,10] %>
+</div>
+
+</div>
+<!--
 <% @police_brutalities["data"].each do |police_brutality| %>
 <div class="row">
 	<div class="col-3"><%= police_brutality["city"] + ", " + police_brutality["state"] %></div> 
@@ -31,4 +51,4 @@
 </div>
 <% end %>
 </div>
-
+-->
