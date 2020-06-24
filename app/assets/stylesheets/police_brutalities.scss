@@ -3,13 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-h1, h2 {
-	text-align: center;
-}
 
-h2 {
-
-}
 .count {
 	color: blue;
 	border: 5px solid blue;
@@ -40,6 +34,10 @@ h2 {
 .container a:visited {
 	color: #ffffff;
 	}
+	
+.out-of-flow {
+	float: right;
+}
 
 /* Bubble with an isoceles triangle from http://nicolasgallagher.com/pure-css-speech-bubbles/
 ------------------------------------------ */
