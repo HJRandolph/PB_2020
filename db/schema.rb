@@ -13,6 +13,11 @@
 ActiveRecord::Schema.define(version: 2020_06_17_201655) do
 
   create_table "police_brutalities", force: :cascade do |t|
+    t.integer "pb_id"
+    t.string "api_id"
+    t.string "state"
+    t.string "city"
+    t.string "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
