@@ -1,12 +1,14 @@
 <% provide(:title, "Police Brutality List | 2020") %>
 <% content_for :refresh_tag do %>
-  <meta http-equiv="refresh" content="10">
+  <meta http-equiv="refresh" content="30">
 <% end %>
 
 
-
+<p class="note">This page automatically refreshes every 30 seconds.</p>
 <div class="container">
+
 <h1>Police actions that should be in the news.</h1>
+
 <div class="row">
 <div class="col-12 triangle-isosceles">
 	 <p>On <%= @random_b["date"][0,10] %> in <%= @random_b["city"] %>, 	<%= @random_b["state"] %> <%= @random_b["title"] %>.</p>
