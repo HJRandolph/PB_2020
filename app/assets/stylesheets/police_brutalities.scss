@@ -71,3 +71,12 @@
   border-style: solid;
   border-color: blue transparent;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 20pt;
+  }
+  
+  
+
+}
