@@ -1,4 +1,53 @@
-<p id="notice"><%= notice %></p>
+<% provide(:title, "Police Brutality List | 2020") %>
 
-<%= link_to 'Edit', edit_police_brutality_path(@police_brutality) %> |
-<%= link_to 'Back', police_brutalities_path %>
+
+
+<div class="nav" id="nav"><%= link_to "News page", "/", class: "nav-link" %></div>
+
+<div class="container">
+
+<h1>Police actions that should be in the news.</h1>
+
+<div class="row">
+	<div class="col-3 heading">
+	City, State	
+	</div>
+
+	<div class="col-4 heading">
+		Title
+	</div>
+
+	<div class="col-2 heading">
+		Date
+	</div>
+
+	<div class="col-3 heading">
+		Evidence
+	</div>		
+	<% n = 1 %>
+	<% @incidents["data"].each do |inc| %>
+		<div class="col-3">
+		<%= n %>.	<%= inc["city"] %>, <%= inc["state"] %>
+		</div>
+		
+		<div class="col-4">
+			<%= inc["title"] %>
+		</div>
+		
+		<div class="col-2">
+			<%= inc["date"][0,10] %>
+		</div>
+		
+		<div class="col-3">
+			<% i = 65 %>
+			<% inc["links"].each do |link| %>
+				<%= link_to "Exhibit #{i.chr}", link, class: "list", target: "_blank" %>
+				<% i += 1 %>
+			<% end %>
+		</div>
+		<% n += 1 %>
+	<% end %>
+
+</div>
+
+</div>

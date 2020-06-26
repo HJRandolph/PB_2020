@@ -1,10 +1,11 @@
-<% provide(:title, "Police Brutality List | 2020") %>
+<% provide(:title, "Police Brutality Incidents | 2020") %>
 <% content_for :refresh_tag do %>
   <meta http-equiv="refresh" content="30">
 <% end %>
 
 
 <p class="note">This page automatically refreshes every 30 seconds.</p>
+
 <div class="container">
 
 <h1>Police actions that should be in the news.</h1>
@@ -23,7 +24,7 @@
 
 	<p class="out-of-flow">Report your incident(s) <%= link_to 'here', 
 	"https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE" %>.</p>
-
+<p><%= link_to "View the entire list of  #{@police_brutalities["data"].count} incidents.", "/show" %></p>
 </div>
 
 <%= image_tag ("radio_newscaster_75.jpg") %>

@@ -2,12 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+h1 {
+	text-align: center;
+}
 
 .count {
 	color: blue;
 	border: 5px solid blue;
 	padding: .15em;
+}
+
+.count-top {
+	color: #ffffff;
+	border: 5px solid #ffffff;
+	padding: .15em;
+	text-align: right;
 }
 
 .label {
@@ -18,6 +27,7 @@
 .container {
 	height: 100%;
 	position: realtive;
+	margin-top: 1rem;
 }
 
 .contained img {
@@ -44,6 +54,56 @@
 	font-size: .55rem;
 	top: 0;
 	right: 0;
+}
+
+.heading {
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+a.list {
+	color: blue;
+	
+}
+
+a.list:visited {
+	color: blue;
+}
+
+footer {
+	text-align: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky +  .container {
+	padding-top: 60px;
+}
+
+.nav {
+	font-size: 1.25rem;
+	padding: .75rem .75rem;
+  	background: blue;
+	color: #ffffff;
+	opacity: 1;
+	z-index: 99;
+	width: 100%;
+}
+
+a.nav-link {
+	color: #ffffff;
+}
+
+a.nav-link:hover {
+	color: #ffffff;
+}
+
+a.nav-link:visited {
+	color: #ffffff;
 }
 
 /* Speech bubble from https://leaverou.github.io/bubbly/
