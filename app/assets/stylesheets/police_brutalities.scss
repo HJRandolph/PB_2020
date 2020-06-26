@@ -4,6 +4,7 @@
 
 h1 {
 	text-align: center;
+	margin-bottom: 1rem;
 }
 
 .count {
@@ -59,6 +60,7 @@ h1 {
 .heading {
 	font-weight: bold;
 	font-size: 1.25rem;
+	margin-bottom: .5rem;
 }
 
 a.list {
@@ -104,6 +106,10 @@ a.nav-link:hover {
 
 a.nav-link:visited {
 	color: #ffffff;
+}
+
+.more {
+	margin-left: 3rem;
 }
 
 /* Speech bubble from https://leaverou.github.io/bubbly/

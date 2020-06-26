@@ -1,5 +1,7 @@
 <% provide(:title, "Police Brutality List | 2020") %>
-
+<% content_for :refresh_tag do %>
+  <meta http-equiv="no-refresh">
+<% end %>
 
 
 <div class="nav" id="nav"><%= link_to "News page", "/", class: "nav-link" %></div>
@@ -25,7 +27,7 @@
 		Evidence
 	</div>		
 	<% n = 1 %>
-	<% @incidents["data"].each do |inc| %>
+	<% $police_brutalities["data"].each do |inc| %>
 		<div class="col-3">
 		<%= n %>.	<%= inc["city"] %>, <%= inc["state"] %>
 		</div>

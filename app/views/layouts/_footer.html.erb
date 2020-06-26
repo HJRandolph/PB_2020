@@ -1,8 +1,16 @@
 <hr />
 <footer>
-<p>The list this site pulls from currently contains <span class="count"><%= @police_brutalities["data"].count %></span> reports of police brutality.</p>
+<p>The list this site pulls from currently contains <span class="count"><%= $police_brutalities["data"].count %></span> reports of police brutality.</p>
+
 </footer>
 
+<hr />
+<p class="more">
+<% $police_brutalities["meta"]["more"].each do |a| %>
+<%= a %></br>
+
+<% end %>
+</p>
 
 <script>
 window.onscroll = function() {myFunction()};
