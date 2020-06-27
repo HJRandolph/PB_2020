@@ -1,11 +1,11 @@
 /* Portrait */
 @media only screen 
-  and (min-device-width: 375px) 
+
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait)  {
-  body {
-    font-size: 20pt;
+  [class*="col-"] {
+    width: 100%;
   }
   
   p {
@@ -14,7 +14,6 @@
   
   h1 {
 	text-align: center;
-	margin-bottom: 1rem;
   }
   .container {
 	height: 100%;
@@ -33,21 +32,6 @@
 	color: #fff;
 }
 
-.speech-bubble a {
-	background-color: blue;
-	color: #ffffff;
-}
-
-.speech-bubble a:visited {
-	background-color: blue;
-	color: #ffffff;
-}
-
-.speech-bubble p {
-		font-size: .75rem;
-	color: #ffffff;
-
-}
 
 a.list {
 	color: blue;
