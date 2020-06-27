@@ -1,7 +1,7 @@
 /* Portrait */
 @media only screen 
 
-  and (max-device-width: 812px) 
+  and (max-device-width: 480px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait)  {
   [class*="col-"] {
