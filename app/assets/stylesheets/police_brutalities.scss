@@ -1,7 +1,7 @@
 // Place all the styles related to the police_brutalities controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@media only screen and (min-width: 600px) {
 h1 {
 	text-align: center;
 	margin-bottom: 1rem;
@@ -121,6 +121,7 @@ a.nav-link:visited {
 
 .more {
 	margin-left: 15%;
+		color: grey;
 }
 
 /* Speech bubble from https://leaverou.github.io/bubbly/
@@ -153,15 +154,5 @@ a.nav-link:visited {
 	color: #ffffff;
 
 }
-
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 20pt;
-  }
-  
-  p {
-  	font-size: 2rem;
-  }
-  
 
 }
