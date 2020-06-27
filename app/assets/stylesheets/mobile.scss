@@ -1,0 +1,84 @@
+/* Portrait */
+@media only screen 
+
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait)  {
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  .speech-bubble {
+	position: relative;
+	background: blue;
+	border-radius: 1.5em;
+}
+
+  
+  p {
+  	font-size: 2rem;
+  }
+  
+  h1 {
+	text-align: center;
+  }
+  .container {
+	height: 100%;
+	position: relative;
+	margin-top: 1rem;
+	width: 100%;
+  }
+  
+  .heading {
+	font-weight: bold;
+	font-size: 1.25rem;
+	margin-bottom: .5rem;
+}
+
+.speech-bubble {
+	background-color: blue;
+	color: #fff;
+	width: 100%;
+}
+
+
+a.list {
+	color: blue;
+	
+}
+
+a.list:visited {
+	color: blue;
+}
+
+footer {
+	text-align: center;
+}
+
+footer ul li {
+	color: #000000;
+	font-size: .75rem;
+	display: block;
+	padding: .5rem;
+}
+
+footer a {
+	color: #000000;
+}
+
+footer a:visited {
+	color: #000000;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+.more {
+	margin-left: 5%;
+	font-size: .75rem;
+	color: grey;
+}
+
+
+}

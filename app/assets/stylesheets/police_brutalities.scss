@@ -131,9 +131,10 @@ a.nav-link:visited {
 	position: relative;
 	background: blue;
 	border-radius: 1.5em;
+	color: #fff;
 }
 
-
+@media only screen and (min-width: 812px) {
 .speech-bubble:after {
 	content: '';
 	position: absolute;
@@ -156,7 +157,7 @@ a.nav-link:visited {
 
 }
 
-@media only screen and (min-width: 812px) {
+
 .out-of-flow {
 	float: right;
 }
