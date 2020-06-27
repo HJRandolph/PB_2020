@@ -50,9 +50,6 @@ h1 {
 	color: #ffffff;
 	}
 	
-.out-of-flow {
-	float: right;
-}
 
 .note {
 	position: absolute;
@@ -131,26 +128,6 @@ a.nav-link:visited {
 /* Speech bubble from https://leaverou.github.io/bubbly/
 ------------------------------------------ */
 
-.speech-bubble {
-	position: relative;
-	background: blue;
-	border-radius: 0;
-}
-
-
-
-.speech-bubble a a:visited {
-	background-color: blue;
-	color: #ffffff;
-}
-
-.speech-bubble p {
-
-	color: #ffffff;
-
-}
-
-@media only screen and (min-width: 812px) {
 
 .speech-bubble {
 	position: relative;
@@ -179,6 +156,11 @@ a.nav-link:visited {
 		font-size: 1.15rem;
 	color: #ffffff;
 
+}
+
+@media only screen and (min-width: 812px) {
+.out-of-flow {
+	float: right;
 }
 
 }
