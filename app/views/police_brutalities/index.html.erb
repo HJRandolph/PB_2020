@@ -16,9 +16,12 @@
 				<% i += 1 %>
 			<% end %>
 
-	<p class="out-of-flow">Report your incident(s) <%= link_to 'here', 
-	"https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE" %>.</p>
-<p><%= link_to "View the entire list of  #{$police_brutalities["data"].count} incidents.", "/show" %></p>
+	<p><%= link_to "View the entire list of  #{$police_brutalities["data"].count} incidents.", "/show" %>
+	</p>
+	<p>
+	<%= link_to 'Report your incident(s)', 
+	"https://github.com/2020PB/police-brutality/issues/new?assignees=&labels=Incident+report&template=incident-report.md&title=Incident+in+CITY%2C+STATE" %>. </p>
+
 </div>
 <%= image_tag ("radio_newscaster_75.jpg"), alt: "Radio newscaster profile in black and white" %>
 
