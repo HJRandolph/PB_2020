@@ -24,6 +24,7 @@
 	</div>		
 	<% n = 1 %>
 	<% $police_brutalities["data"].each do |inc| %>
+
 		<div class="col-3">
 		<%= n %>.	<%= inc["city"] %>, <%= inc["state"] %>
 		</div>
@@ -43,6 +44,7 @@
 				<% i += 1 %>
 			<% end %>
 		</div>
+
 		<% n += 1 %>
 	<% end %>
 
