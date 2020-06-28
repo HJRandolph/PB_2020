@@ -124,6 +124,14 @@ a.nav-link:visited {
 }
 
 
+.out-of-flow {
+	float: right;
+}
+
+
+img {
+	max-width: 75%;
+}
 
 /* Speech bubble from https://leaverou.github.io/bubbly/
 ------------------------------------------ */
@@ -159,9 +167,5 @@ a.nav-link:visited {
 
 }
 
-
-.out-of-flow {
-	float: right;
-}
 
 }
