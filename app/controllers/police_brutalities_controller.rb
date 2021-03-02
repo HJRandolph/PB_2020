@@ -14,7 +14,6 @@ class PoliceBrutalitiesController < ApplicationController
 
   def show
 
-
   end
 	
 end
