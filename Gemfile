@@ -21,7 +21,7 @@ gem 'bootstrap', '~> 4.5.0'
 
 
 #Bring in the API data
-gem 'httparty', '~> 0.18.1'
+gem 'httparty', '~> 0.21.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
